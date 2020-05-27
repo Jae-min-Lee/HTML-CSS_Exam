@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>표(table) 만들기</title>
+<script src="./jq/jquery-3.5.0.min.js"></script>
+<script>
+	$(document).ready(function() {	
+		$('#header1').css('color', 'blue');//id 선택자
+		$('#header2').css('color', 'yellow');	
+	});
+	<!-- $: 객체선택, 선택자(DOM: 문서객체모델)-->
+</script>
+</head>
+<body>
+	<article>
+		<section>
+			<h2 id="header1" align="center">1행1열 만들기</h2>
+			<table border="1" align="center">
+				<tbody>
+					<tr>
+						<td>1행 1열</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section>
+			<h2 id="header2" align="center">1행2열 만들기</h2>
+			<table align="center" border="1">
+				<tbody>
+					<tr>
+						<td>1행 1열</td>
+						<td>1행 2열</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section>
+			<h2 align="center">2행1열 만들기</h2>
+			<table border="1" align="center">
+				<tbody>
+					<tr>
+						<td align="center">1행 1열</td>
+					</tr>
+					<tr>
+						<td align="center">2행 1열</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section>
+			<h2 align="center">2행2열 만들기</h2>
+
+			<table border="1" align="center">
+				<tbody>
+					<tr>
+						<td align="center">1행 1열</td>
+						<td align="center">1행 2열</td>
+					</tr>
+					<tr>
+						<td align="center">2행 1열</td>
+						<td align="center">2행 2열</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section>
+			<h2 align="center">공연요금 표 만들기</h2>
+			<table align="center" border="1">
+				<tbody>
+					<tr>
+						<td colspan="3" align="center">공연요금</td>
+					</tr>
+					<tr>
+						<td>구분</td>
+						<td align="center">S석</td>
+						<td align="center">VIP</td>
+					</tr>
+					<tr>
+						<td>성인</td>
+						<td align="center">30,000원</td>
+						<td align="center">50,000원</td>
+					</tr>
+					<tr>
+						<td>청소년</td>
+						<td>15,000원</td>
+						<td align="center">30,000원</td>
+					</tr>
+					<tr>
+						<td rowspan="2">공연시간</td>
+						<td align="center">1회</td>
+						<td>10:00시 ~ 12:00시</td>
+					</tr>
+					<tr>
+						<td align="center">2회</td>
+						<td>19:30시 ~ 21:30시</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<p>
+			<br>
+		</p>
+		<hr>
+		<section>
+			<h2 align="center">2020년 컴퓨터 판매 현황표 만들기</h2>
+			<table align="center" border="1" summary="상하반기 노트북 판매 현황">
+				<caption>컴퓨터와 노트북 판매 현황</caption>
+				<colgroup>
+					<col width="20%">
+					<col width="30%">
+					<col width="20%">
+					<col width="30%">
+				</colgroup>
+
+				<thead>
+					<tr>
+						<th scope="col">구분</th>
+						<th scope="col">컴퓨터</th>
+						<th scope="col">노트북</th>
+						<th scope="col">스마트폰</th>
+					</tr>
+				</thead>
+
+				<tfoot>
+					<tr>
+						<th scope="row" align="center">총판매수</th>
+						<td scope="row" align="center">5만대</td>
+						<td scope="row" align="center">50만대</td>
+						<td scope="row" align="center">500만대</td>
+					</tr>
+				</tfoot>
+
+				<tbody>
+					<tr>
+						<th scope="row" align="center">상반기 판매수</th>
+						<td scope="row" align="center">2만대</td>
+						<td scope="row" align="center">30만대</td>
+						<td scope="row" align="center">200만대</td>
+					</tr>
+
+					<tr>
+						<th scope="row" align="center">하반기 판매수</th>
+						<td scope="row" align="center">3만대</td>
+						<td scope="row" align="center">20만대</td>
+						<td scope="row" align="center">300만대</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+	</article>
+	<p>
+		<br>
+	</p>
+	<footer>Copyright 2020 All rights reserved.</footer>
+</body>
+</html>

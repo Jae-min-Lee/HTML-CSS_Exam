@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>글자 속성</title>
+<style type="text/css">
+*{font-size:20px;}
+h1 {
+	font-size: 100%;
+	font-style: italic;
+	text-decoration: underline;
+	color: pink;
+	letter-spacing:10px;
+}
+
+h2 {
+	font-size: 50%;
+	font-weight: bold;
+	font-style: italic;
+	color: rgb(0, 255, 0);
+	letter-spacing:-20px;
+}
+
+h3 {
+	font-size: 1em;
+	font-weight: 300;
+	text-align: center;
+	color: #ffff00;
+	letter-spacing:30px;
+}
+h4 {
+	word-spacing:70px;
+}
+h5 {
+	word-spacing:-50px;
+}
+h6 {
+	word-spacing:0px;
+}
+
+p {
+	font-size: 20px;
+	font-weight: 700;
+	text-decoration: underline;
+	text-align: right;
+	color: hsl(255, 255, 255, 1);
+	letter-spacing:40px;
+}
+
+a {
+	text-decoration: none;
+	text-decoration: line-through;
+}
+</style>
+</head>
+<body>
+	<h1 class="text1">텍스트 문자1</h1>
+	<h2 class="text2">텍스트 문자2</h2>
+	<h3 class="text3">텍스트 문자3</h3>
+	<h4 class="text4">바나나 맛 우유 스파클링</h4>
+	<h5 class="text5">과정 평가형 정보처리 산업기사</h5>
+	<h6 class="text6">동해물과 백두산이 마르고 닳도록</h6>
+	
+	<p class="text4">텍스트 문자4</p>
+	<a href="#link.html">hyperlinkTest</a>
+</body>
+</html>
+<!-- letter-spacing : 글자간 간격, 음수도 가능합니다. 그러면 글자가 겹칩니다.
+word-spacing : 단어와 단어 사이의 간격 -->

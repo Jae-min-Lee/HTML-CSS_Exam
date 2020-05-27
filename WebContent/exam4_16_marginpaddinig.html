@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>마진과 패딩</title>
+<style type="text/css">
+span, div {
+	background:yellow;
+	border: 1px solid red;
+}
+
+.left{
+	position:relative;
+	left:-5px;
+}
+
+.right {
+	position:relative;
+	right:-7px;
+}
+
+.bottom {
+	position:relative;
+	bottom: -10px;
+}
+.top {
+	position:relative;
+	top:5px;
+	z-index:1;
+}
+</style>
+</head>
+<body>
+	<span class="left">LEFT</sapn>
+	<span class="right">RIGHT</sapn>
+	<span class="bottom">BOTTOM</sapn>
+	<div class="top">TOP</div>
+</body>
+</html>
+<!-- 여기서 태그의 위치를 살짝 변경하고 싶을 때 position relative를 사용합니다.
+이제 top(위), right(오른쪽), bottom(아래), left(왼쪽) 속성을 사용해 위치조절이 가능합니다.
+
+각각의 태그가 기존 static이었을 때의 위치를 기준으로 top, right, bottom, left 방향으로 주어진 px만큼 이동했습니다.
+#top 태그에 top: 5px 를 줬는데 왜 아래로 이동했을 까요?
+바로 relative는 각각의 방향을 기준으로 태그 안쪽 방향으로 이동합니다.
+바깥쪽으로 이동하게 하고 싶으면 5px 대신 음수 -5px를 주면 됩니다.
+또한 주목할 것은 #top이 #left 보다 위에 있다는 겁니다.
+보통 태그는 같은 포지션이면 나중에 나온 테그가 더 위에 배치됩니다. 
+하지만 z-index라는 속성을 #top 태그에 더 높게 주었기 때문에 #left 태그보다 위로 올라갔습니다.
+
+z-index는 태그들이 겹칠때 누가 더 위로 올라가는 지를 결정하는 속성입니다.
+기본값은 0이고요, #top에 1을 주었기 떄문에 다른 태그들보다 높게 위치합니다. -->
+
+<!-- relative가 static인 상태를 기준으로 주어진 px만큼 움직였다면,
+absolute는 position static 속성을 가지고 있지 않은 부모를 기준으로 움직입니다.
+만약 부모 중에 position이 relative, absolute, fixed인 태그가 없다면 가장 위의 태그(body)가 기준이 됩니다.
+위의 예시를 보면, #absolute는 조상 태그 중 position:relative인 것이 없기 떄문에 바디를 기준으로 가장 오른쪽으로 달라 붙었습니다.
+반면 #child는 조상 태그인 #parent가 position:relative이기 때문에 그것을 기준으로 가장 오른쪽으로 달라 붙었습니다.
+참고롤 absolute가 되면 div여도 더는 width:100%가 아닙니다.-->

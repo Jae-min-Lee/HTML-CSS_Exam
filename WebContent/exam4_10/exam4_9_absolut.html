@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>absolute Exam</title>
+<style>
+#absolute {
+	background-color: yellow;
+	position: absolute;
+	right: 0;
+}
+
+#parent {
+	width: 200px;
+	height: 200px;
+	background-color: skyblue;
+	position: reLative;
+}
+
+#child {
+	position: absolute;
+	left: 0;
+}
+</style>
+</head>
+<body>
+	<div>
+		<div id="absolute">absolute</div>
+	</div>
+	<div>
+		<div id="parent">
+			<div id="child">children</div>
+		</div>
+	</div>
+</body>
+</html>
+<!-- #absolute는 조상 태그 중에서 position:reLative인 것이없어서 
+body를 기준으로  가장 오른 쪽에 달라 붙습니다. 
+그리고 , #child 태그는 부모가 position : reLative이기 때문에 
+가장 오른 쪽으로 붙습니다.-->

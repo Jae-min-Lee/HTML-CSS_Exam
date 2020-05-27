@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>입력폼 태그</title>
+<style type="text/css">
+input[type=text] {
+	border: 3px solid red;
+}
+
+input[type=password] {
+	border: 1px solid blue;
+}
+</style>
+</head>
+<body>
+	<form action="#">
+		<fieldset>
+			<legend>로그인1</legend>
+			<input type="text" maxlength="15" placeholder="아이디를 입력해 주세요." /><br>
+			<input type="password" maxlength="15" placeholder="비밀번호를 입력해 주세요." /><br>
+			<input type="text" value="서울시 서대문구 창천동 92번지" disabled="disabled" /><br>
+		</fieldset>
+		<fieldset>
+			<legend>로그인2</legend>
+			<label for="box1">아이디</label> <input type="text" id="box1"
+				maxlength="15" placeholder="아이디를 입력해 주세요." /><br> <label
+				for="box2">패스워드</label> <input type="password" id="box2"
+				maxlength="15" placeholder="비밀번호를 입력해 주세요." /><br>
+		</fieldset>
+		<fieldset>
+			<legend>라디오 버튼1</legend>
+			<input type="radio" name="gender" checked="checked" />여성<br /> <input
+				type="radio" name="gender" />남성<br />
+		</fieldset>
+		<fieldset>
+			<legend>라디오 버튼2(성별의 선택)</legend>
+			<input type="radio" name="gender" id="femail" checked="checked" /> <label
+				for="femail">여성</label> <input type="radio" name="gender" id="mail" />
+			<label for="male">남성</label>
+		</fieldset>
+		<fieldset>
+			<legend>체크박스</legend>
+			<input type="checked" name="hobby" checked="checked" />등산<br /> <input
+				type="checked" name="hobby" />여행<br />
+		</fieldset>
+		<fieldset>
+			<legend>버튼 종류</legend>
+			<input type="text" /> <input type="button" value="우편번호찾기" /> <input
+				type="reset" value="입력취소" /> <input type="submit" value="회원가입" />
+			<input type="image" src="./images/dd.jpg" alt="코멘트등록" />
+		</fieldset>
+		<fieldset>
+			<legend>버튼 종류</legend>
+			<input type="file" />
+		</fieldset>
+		<fieldset>
+			<legend>옵션 선택</legend>
+			<select>
+				<option>족발</option>
+				<option>보쌈</option>
+				<option>피자</option>
+				<option>짜장</option>
+				<option>짬뽕</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>옵션의 그룹화</legend>
+			<select>
+				<optgroup label="한식">
+					<option>김치찌게</option>
+					<option>된장찌게</option>
+					<option>간장/게장</option>
+				</optgroup>
+				<optgroup label="중식">
+					<option>짜장</option>
+					<option>짬뽕</option>
+					<option>탕수육</option>
+				</optgroup>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>상자</legend>
+			<textarea cols="60" rows="15"></textarea>
+		</fieldset>
+	</form>
+</body>
+</html>

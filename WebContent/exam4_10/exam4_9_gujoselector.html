@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>구조 선택자</title>
+</head>
+<style type="text/css">
+h2{float : left, padding:20px;}
+h2:nth-child(1){background-color:red;}
+h2:nth-child(2){background-color:blue;}
+h2:nth-child(3){background-color:orange;}
+h2:nth-child(odd){color:gray;}
+h2:nth-child(even){background-color:purple;}
+h2:first-child{border-radius:10px 0px 0px 10px;}
+h2:last-child{border-radius:0px 10px 10px 0px;}
+h2:nth-child(3n){text-decoration: underline;}
+</style>
+<body>
+<h2>제목태그1</h2>
+<h2>제목태그2</h2>
+<h2>제목태그3</h2>
+<h2>제목태그4</h2>
+<h2>제목태그5</h2>
+<h2>제목태그6</h2>
+</body>
+</html>

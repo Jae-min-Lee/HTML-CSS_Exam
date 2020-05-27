@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>box sizingApp</title>
+<style type="text/css">
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.cb{boxsizing:content-box;}
+.bb{boxsizing:border-box;}
+.div{margin:20px; padding:20px; border:20px;}
+
+
+.wrap {
+	width: 900px;
+	height: 300px;
+	margin: 50px auto;
+	background-color: pink;
+}
+
+.wrap>div {
+	width: 300px;
+	height: 300px;
+	float: left;
+	border: 1px solid black;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="box1">박스1</div>
+		<div class="box2">박스2</div>
+		<div class="box3">박스3</div>
+	</div>
+	<div class="cb">
+	content-box
+	</div>
+	<div class="bb">
+	border-box
+	</div>
+</body>
+</html>
